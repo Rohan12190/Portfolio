@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rohan Kumar | Portfolio</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Adding more variety -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&family=Space+Mono&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,13 +22,24 @@
 </head>
 
 <body>
+    <!-- Decorative Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+    <div class="bg-shape shape-4"></div>
+
     <!-- Navbar with CSS-only toggle -->
     <nav>
         <div class="nav-container">
-            <h1>Rohan Kumar</h1>
+            <div class="logo">
+                <div class="logo-shape"></div>
+                <h1>Rohan<span>Kumar</span></h1>
+            </div>
             <input type="checkbox" id="menu-toggle" class="menu-checkbox">
             <label for="menu-toggle" class="menu-toggle">
-                <i class="fas fa-bars"></i>
+                <span></span>
+                <span></span>
+                <span></span>
             </label>
             <ul class="nav-links">
                 <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
@@ -40,25 +53,43 @@
     <!-- Header Section -->
     <header class="header">
         <div class="header-content">
-            <div class="profile-image">
-                <img src="photo.jpg" alt="Rohan Kumar">
-            </div>
-            <div class="header-text">
-                <h2>Hello, I'm Rohan</h2>
-                <p>Aspiring Developer | Data & Computational Science @ VIT Bhopal</p>
+            <div class="header-left">
+                <div class="tag">Hello There! 👋</div>
+                <h2 class="fancy-title">I'm <span>Rohan Kumar</span></h2>
+                <div class="title-bar"></div>
+                <p class="subtitle">Aspiring Developer & Tech Enthusiast</p>
+                <p class="header-description">Building the future with code at VIT Bhopal, where I'm pursuing Integrated
+                    M.Tech in Computational and Data Science.</p>
                 <div class="header-links">
-                    <a href="https://github.com/Rohan12190" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Rohan12190" target="_blank" rel="noopener noreferrer"
+                        class="link-with-tooltip" data-tooltip="Github">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/rohan-kumar-640b72346" target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer" class="link-with-tooltip" data-tooltip="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto:rohityadav13160@gmail.com">
+                    <a href="mailto:rohityadav13160@gmail.com" class="link-with-tooltip" data-tooltip="Email Me">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
+            <div class="header-right">
+                <div class="profile-frame">
+                    <div class="profile-image">
+                        <img src="photo.jpg" alt="Rohan Kumar">
+                    </div>
+                    <div class="profile-accent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="mouse-wheel"></div>
+                </div>
+                <div class="scroll-text">Scroll Down</div>
+            </a>
         </div>
     </header>
 
@@ -66,43 +97,114 @@
         <!-- About Section -->
         <section id="about" class="about">
             <div class="section-container">
-                <h2><i class="fas fa-user"></i> About Me</h2>
-                <p>
-                    I'm a first-year Integrated M.Tech student in Computational and Data Science at VIT Bhopal. I enjoy
-                    building projects, learning new technologies, and constantly improving my skills as a developer. My
-                    goal is to become a well-rounded software engineer capable of working across various domains.
-                </p>
+                <div class="section-header">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-card">
+                        <p>
+                            I'm a first-year Integrated M.Tech student in Computational and Data Science at VIT Bhopal.
+                            I enjoy
+                            building projects, learning new technologies, and constantly improving my skills as a
+                            developer. My
+                            goal is to become a well-rounded software engineer capable of working across various
+                            domains.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-number">1+</div>
+                                <div class="stat-label">Years of<br>Coding</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">6+</div>
+                                <div class="stat-label">Certificates<br>Earned</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">∞</div>
+                                <div class="stat-label">Passion for<br>Learning</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="skills">
             <div class="section-container">
-                <h2><i class="fas fa-code"></i> Skills</h2>
+                <div class="section-header">
+                    <span class="section-subtitle">What I Know</span>
+                    <h2 class="section-title"><i class="fas fa-code"></i> Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <i class="fab fa-html5 fa-3x" style="color: #e34c26;"></i>
-                        <span>HTML</span>
+                        <div class="skill-icon-wrap">
+                            <i class="fab fa-html5 fa-3x"></i>
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-level">
+                                <div class="skill-progress html-progress"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-card">
-                        <i class="fab fa-css3-alt fa-3x" style="color: #264de4;"></i>
-                        <span>CSS</span>
+                        <div class="skill-icon-wrap">
+                            <i class="fab fa-css3-alt fa-3x"></i>
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-level">
+                                <div class="skill-progress css-progress"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-card">
-                        <i class="fas fa-code fa-3x" style="color: #044f88;"></i>
-                        <span>C++</span>
+                        <div class="skill-icon-wrap">
+                            <i class="fas fa-code fa-3x"></i>
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-level">
+                                <div class="skill-progress cpp-progress"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-card">
-                        <i class="fab fa-python fa-3x" style="color: #306998;"></i>
-                        <span>Python</span>
+                        <div class="skill-icon-wrap">
+                            <i class="fab fa-python fa-3x"></i>
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-level">
+                                <div class="skill-progress python-progress"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-card">
-                        <i class="fas fa-database fa-3x" style="color: #f29111;"></i>
-                        <span>SQL</span>
+                        <div class="skill-icon-wrap">
+                            <i class="fas fa-database fa-3x"></i>
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-level">
+                                <div class="skill-progress sql-progress"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-card">
-                        <i class="fab fa-git-alt fa-3x" style="color: #f34f29;"></i>
-                        <span>Git</span>
+                        <div class="skill-icon-wrap">
+                            <i class="fab fa-git-alt fa-3x"></i>
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <div class="skill-progress git-progress"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,61 +213,118 @@
         <!-- Certificates Section -->
         <section id="certificates" class="certificates">
             <div class="section-container">
-                <h2><i class="fas fa-certificate"></i> Certificates</h2>
+                <div class="section-header">
+                    <span class="section-subtitle">What I've Achieved</span>
+                    <h2 class="section-title"><i class="fas fa-certificate"></i> Certificates</h2>
+                    <div class="section-divider"></div>
+                </div>
                 <div class="cert-grid">
-                    <a href="https://www.coursera.org/account/accomplishments/records/EZN3U752G78Y"
-                        target="_blank" class="cert-card">
-                        <i class="fas fa-award"></i>
-                        <span>HTML5 - University of Michigan</span>
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/records/APLLAK97477U"
-                        target="_blank" class="cert-card">
-                        <i class="fas fa-award"></i>
-                        <span>CSS3 - University of Michigan</span>
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/records/VQYI8PUXHIXW"
-                        target="_blank" class="cert-card">
-                        <i class="fas fa-award"></i>
-                        <span>Foundations of Data - Google</span>
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/records/99DNYC5AJZBJ" target="_blank" class="cert-card">
-                        <i class="fas fa-award"></i>
-                        <span>AI Prompting Essentials - Google</span>
-                    </a>
-                    <a href="https://www.hackerrank.com/certificates/ad41e80460a1" target="_blank"
+                    <a href="https://www.coursera.org/account/accomplishments/records/EZN3U752G78Y" target="_blank"
                         class="cert-card">
-                        <i class="fas fa-award"></i>
-                        <span>SQL (Basic & Intermediate) - HackerRank</span>
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>HTML5</h3>
+                            <span>University of Michigan</span>
+                            <div class="cert-platform">Coursera</div>
+                        </div>
                     </a>
-                    <a href="https://www.hackerrank.com/certificates/cdabb70e17be" target="_blank"
+                    <a href="https://www.coursera.org/account/accomplishments/records/APLLAK97477U" target="_blank"
                         class="cert-card">
-                        <i class="fas fa-award"></i>
-                        <span>CSS (Basic) - HackerRank</span>
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>CSS3</h3>
+                            <span>University of Michigan</span>
+                            <div class="cert-platform">Coursera</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/records/VQYI8PUXHIXW" target="_blank"
+                        class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Foundations of Data</h3>
+                            <span>Google</span>
+                            <div class="cert-platform">Coursera</div>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/records/99DNYC5AJZBJ" target="_blank"
+                        class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>AI Prompting Essentials</h3>
+                            <span>Google</span>
+                            <div class="cert-platform">Coursera</div>
+                        </div>
+                    </a>
+                    <a href="https://www.hackerrank.com/certificates/ad41e80460a1" target="_blank" class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>SQL (Basic & Intermediate)</h3>
+                            <span>HackerRank</span>
+                        </div>
+                    </a>
+                    <a href="https://www.hackerrank.com/certificates/cdabb70e17be" target="_blank" class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>CSS (Basic)</h3>
+                            <span>HackerRank</span>
+                        </div>
                     </a>
                 </div>
             </div>
         </section>
+
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="section-container">
-                <h2><i class="fas fa-envelope"></i> Contact</h2>
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
+                    <div class="section-divider"></div>
+                </div>
 
                 <div class="contact-container">
                     <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>Email: <a
-                                    href="mailto:rohityadav13160@gmail.com">rohityadav13160@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <p>GitHub: <a href="https://github.com/Rohan12190" target="_blank">Rohan12190</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <p>LinkedIn: <a href="https://www.linkedin.com/in/rohan-kumar-640b72346"
-                                    target="_blank">Rohan Kumar</a></p>
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:rohityadav13160@gmail.com">rohityadav13160@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>GitHub</h3>
+                                    <p><a href="https://github.com/Rohan12190" target="_blank">Rohan12190</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>LinkedIn</h3>
+                                    <p><a href="https://www.linkedin.com/in/rohan-kumar-640b72346" target="_blank">Rohan
+                                            Kumar</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -187,7 +346,10 @@
                                     required></textarea>
                             </div>
 
-                            <button type="submit">Send Message</button>
+                            <button type="submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -198,6 +360,10 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-shape"></div>
+                <h3>Rohan<span>Kumar</span></h3>
+            </div>
             <p>&copy; 2025 Rohan Kumar. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://github.com/Rohan12190" target="_blank" rel="noopener noreferrer">
@@ -210,6 +376,13 @@
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
+        </div>
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                </path>
+            </svg>
         </div>
     </footer>
 </body>
