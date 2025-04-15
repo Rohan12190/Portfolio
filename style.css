@@ -818,6 +818,7 @@ nav h1 span {
   border-radius: var(--border-radius-sm);
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
+  resize: none;
   transition: var(--transition);
 }
 
